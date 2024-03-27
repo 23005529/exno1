@@ -20,6 +20,8 @@ STEP 5: Remove outliers using IQR
 STEP 6: Use zscore of to remove outliers
 
 ## Coding and Output
+
+### DATA CLEANING
 ```
 import pandas as pd
 df=pd.read_csv("SAMPLEIDS.csv")
@@ -69,7 +71,7 @@ delete
 ```
 ![alt text](O9.png)
 
-## IQR(Inter Quartile Range)
+### IQR(Inter Quartile Range)
 ```
 ir=pd.read_csv('iris.csv')
 ir
@@ -110,7 +112,7 @@ sns.boxplot(x='sepal_width',data=delid)
 ```
 ![alt text](<IQR O7.png>)
 
-## Z-SCORE 
+### Z-SCORE 
 ```
 import matplotlib.pyplot as plt
 import scipy.stats as stats
